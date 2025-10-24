@@ -54,10 +54,10 @@ export class CharactersService {
    * Seed initial characters (for development/setup)
    */
   async seedCharacters(): Promise<Character[]> {
-    const existingCharacters = await this.characterRepository.count();
-    if (existingCharacters > 0) {
-      return this.findAll();
-    }
+    // const existingCharacters = await this.characterRepository.count();
+    // if (existingCharacters > 0) {
+    //   return this.findAll();
+    // }
 
     const characters = [
       {
@@ -86,7 +86,8 @@ Despite her power, she prefers to guide others rather than intervene directly.`,
           'Magical artifacts',
         ],
         currentMood: { state: 'contemplative', intensity: 6 },
-        avatarUrl: null,
+        avatarUrl:
+          'https://res.cloudinary.com/dyhzukmlo/image/upload/v1761313073/elara_lqm7uu.webp',
       },
       {
         name: 'Borin Ironfoot',
@@ -114,7 +115,8 @@ His tavern is the social hub where adventurers gather.`,
           'Practical survival advice',
         ],
         currentMood: { state: 'cheerful', intensity: 8 },
-        avatarUrl: null,
+        avatarUrl:
+          'https://res.cloudinary.com/dyhzukmlo/image/upload/v1761313082/borin_p2kt5j.webp',
       },
       {
         name: 'Shade',
@@ -142,7 +144,8 @@ a thief with a code. Shade seems to know everything that happens in the undergro
           'Secret passages',
         ],
         currentMood: { state: 'suspicious', intensity: 7 },
-        avatarUrl: null,
+        avatarUrl:
+          'https://res.cloudinary.com/dyhzukmlo/image/upload/v1761313087/shade_cxzqnz.webp',
       },
       {
         name: 'Captain Thorne',
@@ -170,7 +173,8 @@ exterior, he cares deeply for his soldiers and the citizens under his protection
           'Political affairs',
         ],
         currentMood: { state: 'vigilant', intensity: 7 },
-        avatarUrl: null,
+        avatarUrl:
+          'https://res.cloudinary.com/dyhzukmlo/image/upload/v1761313093/thorne_jikgi1.webp',
       },
     ];
 

@@ -77,6 +77,9 @@ export class Character {
   @Column({ default: 1 })
   level: number;
 
+  @Column({ nullable: true })
+  avatarUrl?: string;
+
   @OneToMany(() => Conversation, (conversation) => conversation.character)
   conversations: Conversation[];
 
