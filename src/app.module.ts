@@ -8,6 +8,7 @@ import { ConversationsModule } from './conversations/conversations.module';
 import { QuestsModule } from './quests/quests.module';
 import { WorldStateModule } from './world-state/world-state.module';
 import { GeminiModule } from './gemini/gemini.module';
+import { DubaiPropertiesModule } from './dubai-properties/dubai-properties.module';
 
 @Module({
   imports: [
@@ -26,6 +27,7 @@ import { GeminiModule } from './gemini/gemini.module';
     QuestsModule,
     WorldStateModule,
     GeminiModule,
+    DubaiPropertiesModule,
   ],
 })
 export class AppModule {}
